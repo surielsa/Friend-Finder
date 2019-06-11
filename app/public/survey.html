@@ -1,30 +1,175 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script type="text/javascript"></script>
-    <link rel="icon" type="image/x-icon" href="Homework/Friend-Finder/app/images/drag-race-background2.jpg">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <title>Drag-Race Friend Survey</title>
-  </head>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+  <script type="text/javascript"></script>
+  <link rel="icon" type="image/x-icon" href="Homework/Friend-Finder/app/images/drag-race-background2.jpg">
 
-  <body>
-    <div class="jumbotron">
-        <h1 class="display-4">Start Drag Race Survey!</h1>
-        <p class="lead">Answer the questions below and find your match!</p>
+  <title>Drag-Race Friend Survey</title>
+</head>
+
+<body>
+  <div class="jumbotron">
+    <h1 class="display-4"><strong>Start Drag Race Survey!</strong></h1>
+    <p class="lead">Choose your match by picking the statements most compatible to you.</p>
+  </div>
+
+  <form>
+      <div class="form-group">
+        <label for="userName">Your Drag Name</label>
+        <input type="text" class="form-control" id="friendName" placeholder="Enter Your Name">
+      </div>
+      <div class="input-group mb-3">
+        <div class="custom-file">
+          <input type="file" class="custom-file-input" id="inputGroupFile02 ">
+          <label class="custom-file-label" for="inputGroupFile02">Choose file</label>
+        </div>
+        <div class="input-group-append">
+          <span class="input-group-text" id="friendImg">Upload</span>
+        </div>
       </div>
     
-    <footer>
-		<div class="container">
-       		<p><a href="app/data/friends.js">API Friends Link</a> | <a href="https://surielsa.github.io/Friend-Finder/">GitHub Repo</a></p>
-     	</div>
-	</footer>
-  </body>
+
+  <h5>Rules of the Game: Read the statements below and pick which fit you best by choosing a number between 1 (Strongly Disagree) and 5 (Strongly Agree) from the dropdown below.</h5>
+  <br>
+  <div class="form-group">
+    <label for="question1">Question 1: Do you like playing board games?</label>
+    <select class="form-control" id="question1">
+      <option value>Select an option</option>
+      <option value=1>1 (Strongly Disagree)</option>
+      <option value=2>2</option>
+      <option value=3>3</option>
+      <option value=4>4</option>
+      <option value=5>5 (Strongly Agree)</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="question2">Question 2: Do you enjoy spending your time at parties or with large groups of people?</label>
+    <select class="form-control" id="question2">
+      <option value>Select an option</option>
+      <option value=1>1 (Strongly Disagree)</option>
+      <option value=2>2</option>
+      <option value=3>3</option>
+      <option value=4>4</option>
+      <option value=5>5 (Strongly Agree)</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="question3">Question 3: Do you spend a lot time outdoors doing activities like hiking or biking?</label>
+    <select class="form-control" id="question3">
+      <option value>Select an option</option>
+      <option value=1>1 (Strongly Disagree)</option>
+      <option value=2>2</option>
+      <option value=3>3</option>
+      <option value=4>4</option>
+      <option value=5>5 (Strongly Agree)</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="question4">Question 4: Do you like watching sports?</label>
+    <select class="form-control" id="question4">
+      <option value>Select an option</option>
+      <option value=1>1 (Strongly Disagree)</option>
+      <option value=2>2</option>
+      <option value=3>3</option>
+      <option value=4>4</option>
+      <option value=5>5 (Strongly Agree)</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="question5">Question 5: Do you enjoy cooking?</label>
+    <select class="form-control" id="question5">
+      <option value>Select an option</option>
+      <option value=1>1 (Strongly Disagree)</option>
+      <option value=2>2</option>
+      <option value=3>3</option>
+      <option value=4>4</option>
+      <option value=5>5 (Strongly Agree)</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="question6">Question 6: Do you like to travel?</label>
+    <select class="form-control" id="question6">
+      <option value>Select an option</option>
+      <option value=1>1 (Strongly Disagree)</option>
+      <option value=2>2</option>
+      <option value=3>3</option>
+      <option value=4>4</option>
+      <option value=5>5 (Strongly Agree)</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="question7">Question 7: Do you like to go out with a couple of friends to socialize?</label>
+    <select class="form-control" id="question7">
+      <option value>Select an option</option>
+      <option value=1>1 (Strongly Disagree)</option>
+      <option value=2>2</option>
+      <option value=3>3</option>
+      <option value=4>4</option>
+      <option value=5>5 (Strongly Agree)</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="question8">Question 8: Do you participate in sports?</label>
+    <select class="form-control" id="question8">
+      <option value>Select an option</option>
+      <option value=1>1 (Strongly Disagree)</option>
+      <option value=2>2</option>
+      <option value=3>3</option>
+      <option value=4>4</option>
+      <option value=5>5 (Strongly Agree)</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="question9">Question 9: Do you spend time doing crafts?</label>
+    <select class="form-control" id="question9">
+      <option value>Select an option</option>
+      <option value=1>1 (Strongly Disagree)</option>
+      <option value=2>2</option>
+      <option value=3>3</option>
+      <option value=4>4</option>
+      <option value=5>5 (Strongly Agree)</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="question10">Question 10: Do you like going to movies?</label>
+    <select class="form-control" id="question10">
+      <option value>Select an option</option>
+      <option value=1>1 (Strongly Disagree)</option>
+      <option value=2>2</option>
+      <option value=3>3</option>
+      <option value=4>4</option>
+      <option value=5>5 (Strongly Agree)</option>
+    </select>
+  </div>
+  <br>
+  <button type="submit" class="btn btn-primary submit"><i class="far fa-check-square"></i> Submit Survey</button>
+</form>
+
+</div>
+</div>
+  <footer>
+    <div class="container">
+      <!-- change the friends.js & home.html link below to the one from Heroku -->
+      <p><a href="app/data/friends.js">API Friends Link</a> | <a href="https://github.com/surielsa/Friend-Finder">GitHub Repo</a> | <a href="Homework/Friend-Finder/app/public/home.html">Home</a>
+          </p>
+    </div>
+  </footer>
+</body>
+
 </html>
